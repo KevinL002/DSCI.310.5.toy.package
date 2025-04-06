@@ -1,0 +1,46 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# DSCI.310.5.toy.package
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of DSCI.310.5.toy.package is to illustrate package creation for
+assignment 5 of DSCI 310
+
+Note that the basis for this package is
+<https://r-pkgs.org/whole-game.html>
+
+## Installation
+
+You can install the development version of DSCI.310.5.toy.package from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("KevinL002/DSCI.310.5.toy.package")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(DSCI.310.5.toy.package)
+
+x <- "a,b,c"
+str_split_one(x, pattern = ",", n = 2)
+#> [1] "a"   "b,c"
+
+y <- "192.168.0.1"
+str_split_one(y, pattern = stringr::fixed("."))
+#> [1] "192" "168" "0"   "1"
+```
+
+Use `str_split_one()` when the input is known to be a single string. For
+safety, it will error if its input has length greater than one.
+
+`str_split_one()` is built on `stringr::str_split()`, so you can use its
+`n` argument and stringr’s general interface for describing the
+`pattern` to be matched.
