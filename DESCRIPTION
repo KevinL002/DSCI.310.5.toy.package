@@ -14,3 +14,5 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     stringr
+URL: https://github.com/KevinL002/DSCI.310.5.toy.package
+BugReports: https://github.com/KevinL002/DSCI.310.5.toy.package/issues
